@@ -1,13 +1,19 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import "tailwindcss/base";
+
+@import "tailwindcss/components";
+
+@import "tailwindcss/utilities";
+
+.input {
+    @apply w-full py-2 bg-gray-100 text-gray-900 px-1 outline-none mb-2 font-semibold rounded-md
+}
+.label {
+    @apply text-gray-900 font-semibold tracking-wide
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.button{
+    @apply bg-zinc-800 w-full text-gray-100 py-2 rounded hover:scale-105 duration-300 font-semibold tracking-wide mt-2 text-xl
+}
+.error{
+    @apply text-red-600 font-semibold
 }
